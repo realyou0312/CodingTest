@@ -1,14 +1,14 @@
 def math(e):
     if e.count('(') != e.count(')'):
         return False
-    괄호 = []
+    a = []
     for i in e:
         if i == '(':
-            괄호.append('(')
+            a.append('(')
         if i == ')':
-            if len(괄호) == 0:
+            if len(a) == 0:
                 return False
-            괄호.pop()
+            a.pop()
     return True
 
 n = input()
