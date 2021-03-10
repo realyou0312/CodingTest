@@ -1,4 +1,4 @@
-# 2021 카카오 공채 1번 문제:
+# 2021 카카오 공채 1번 문제
 # https://programmers.co.kr/learn/courses/30/lessons/72410?language=python3
 
 
