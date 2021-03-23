@@ -10,7 +10,7 @@ https://www.acmicpc.net/problem/2667
 '''
 
 size = int(input())
-address = []  # 집의 유무
+address = [] # 집의 유무
 visit = [[0 for _ in range(size)] for _ in range(size)] # 방문기록 2차원으로 저장
 ans = [] # 단지 내 집 개수
 cnt = 0 # 단지 개수
@@ -25,7 +25,7 @@ def DFS(row, col):
             ans[cnt] += 1 # 현재 단지 번호에 해당하는 집 수 증가
             if (row > 0): # 좌측 이동 가능 여부
                 if (visit[row-1][col] == 0):
-                    DFS(row-1, col)   
+                    DFS(row-1,col)   
             if (row < size-1): # 우측 이동 가능 여부
                 if visit[row+1][col] == 0:
                     DFS(row+1,col)
