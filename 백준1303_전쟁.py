@@ -36,6 +36,7 @@ matrix = [list(input()) for i in range(col)]
 check = [[0] * row for i in range(col)]
 
 dx, dy = [1, -1, 0, 0], [0, 0, 1, -1]  # 4방향
+q = deque()
 B = 0
 W = 0
 
