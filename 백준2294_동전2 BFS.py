@@ -23,7 +23,7 @@ for coin in coins:
 check2 = True    # 불가능한 경우 확인
 while q:
     val, cnt = q.popleft()
-    if val == k:
+    if val == k:        # 하나씩 써내서 k와 비교
         print(cnt)
         check2 = False
         break
