@@ -59,8 +59,20 @@ n=int(input())
 num=[]
 
 for _ in range(n):
-    x = int(input())
-    num.append(x)
+    num.append(int(input()))
+
+for i in sorted(num):
+    print(i)
+
+
+# Python3에서 가능한 방법 -> sys.stdin.readline() 이용하기 -> 시간차이 감소
+
+import sys
+n = int(sys.stdin.readline())
+num=[]
+
+for _ in range(n):
+    num.append(int(sys.stdin.readline()))
 
 for i in sorted(num):
     print(i)
